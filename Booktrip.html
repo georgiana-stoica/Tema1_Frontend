@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book trip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/image1.jpg" alt="First image" style="width:100%">
+                <div class="centered">Book your trip</div>
+                <div class="text">An arrangement you make to have a hotel room, tickets, etc. at a particular time in the future</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/image2.jpg" alt="Second image" style="width:100%">
+                <div class="centered">Book your trip</div>
+                <div class="text">An arrangement you make to have a hotel room, tickets, etc. at a particular time in the future</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/image3.jpg" alt="Third image" style="width:100%">
+                <div class="centered">Book your trip</div>
+                <div class="text">An arrangement you make to have a hotel room, tickets, etc. at a particular time in the future</div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="leaveFrom">Leave From</label>
+                    <select id="leaveFrom" class="form-control">
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="to">To</label>
+                    <select id="to" class="form-control">
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="nativeDatePicker">
+                            <label for="bday">Depart</label>
+                            <input type="text" id="bday-placeholder" placeholder="Please select date">
+                            <input type="date" id="bday" name="bday" style="display: none;">
+                            <span class="validity"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <button id="searchButton" class="bounce">Search</button>
+
+        <section id="image-cards-container" class="card-category-2">
+            <h2><span class="category-name">Hoteluri</span></h2>
+            <ul id="image-cards-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </nav>
+        <br>
+        <br>
+
+        <div>
+            <i class="fab fa-facebook pulse"></i>
+            <i class="fa-brands fa-github pulse"></i>
+            <i class="fa-brands fa-twitter pulse"></i>
+            <i class="fab fa-youtube pulse"></i>
+        </div>
+
+        <div id="copyright-right">
+            <p>All rights reserved. Copyright &copy; 2023 DB Summer School by Grupa B</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
